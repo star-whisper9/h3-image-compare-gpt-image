@@ -8,192 +8,416 @@
     {
       "id": "01_still_life",
       "title": "窗边静物 · 写实摄影",
+      "prompt": "生成一张横向的高品质静物摄影。浅灰色石桌上只有一个米白色陶瓷杯、一个透明玻璃水杯和一只完整的橙子。从观者视角看，陶瓷杯在左前方，杯柄朝左；玻璃水杯在中间后方，装半杯清水；橙子在右前方。桌面后是一面温暖的灰白墙。午后柔和阳光从画面左侧窗外照入，三件物体的阴影一致向右后方延伸。视点略高于桌面，50mm 镜头的自然透视，三个主体都清晰。陶瓷有细腻釉面，玻璃边缘和水面折射真实，橙皮毛孔可见。米白、浅灰和橙色构成克制的配色，构图留有呼吸感，不过度锐化。画面中没有其他物品、文字、标志或边框。",
       "images": [
         {
           "model": "gpt-image-2.5-sunburst",
           "src": "images/01_still_life/gpt-image-2.5-sunburst/original.png",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "parameters": {
+            "model": "gpt-image-2.5-sunburst",
+            "size": "1536x1024",
+            "n": 1,
+            "output_format": "png",
+            "quality": "high",
+            "background": "opaque"
+          }
         },
         {
           "model": "gpt-image-2.6-sunburst",
           "src": "images/01_still_life/gpt-image-2.6-sunburst/original.png",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "parameters": {
+            "model": "gpt-image-2.6-sunburst",
+            "size": "1536x1024",
+            "n": 1,
+            "output_format": "png",
+            "quality": "high",
+            "background": "opaque",
+            "complexity": "high"
+          }
         },
         {
           "model": "MiniMax-H3-Image",
           "src": "images/01_still_life/MiniMax-H3-Image/original.png",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "parameters": {
+            "model": "MiniMax-H3-Image",
+            "size": "1536x1024",
+            "n": 1,
+            "output_format": "png",
+            "disable_prompt_enhanced": true,
+            "response_format": "b64_json",
+            "stream": false,
+            "aigc_watermark": false
+          }
         }
       ]
     },
     {
       "id": "02_watercolor",
       "title": "雨后小屋 · 水彩绘本",
+      "prompt": "创作一幅纵向水彩绘本插画：雨后的林间小径通向一座红色屋顶的小木屋，一名穿黄色雨衣、背小布包的孩子背对观者走向小屋。孩子位于画面下方三分之一处，小屋在中上部，左右高大的树木形成自然框景，顶部树冠之间留出浅色天空。小径上浅水洼映出一点黄色雨衣和红色屋顶，路边有蕨类和白色小花。使用真实透明水彩的湿画法、自然水痕和局部干笔，能看见冷压水彩纸的颗粒。以鼠尾草绿、雾蓝和暖赭色为主，黄色与红色作为小面积亮色。轮廓柔软但主体易辨，氛围安静温暖，避免摄影质感和塑料般的三维光泽。没有文字、签名、标志或装饰边框。",
       "images": [
         {
           "model": "gpt-image-2.5-sunburst",
           "src": "images/02_watercolor/gpt-image-2.5-sunburst/original.png",
           "width": 1024,
-          "height": 1536
+          "height": 1536,
+          "parameters": {
+            "model": "gpt-image-2.5-sunburst",
+            "size": "1024x1536",
+            "n": 1,
+            "output_format": "png",
+            "quality": "high",
+            "background": "opaque"
+          }
         },
         {
           "model": "gpt-image-2.6-sunburst",
           "src": "images/02_watercolor/gpt-image-2.6-sunburst/original.png",
           "width": 1024,
-          "height": 1536
+          "height": 1536,
+          "parameters": {
+            "model": "gpt-image-2.6-sunburst",
+            "size": "1024x1536",
+            "n": 1,
+            "output_format": "png",
+            "quality": "high",
+            "background": "opaque",
+            "complexity": "high"
+          }
         },
         {
           "model": "MiniMax-H3-Image",
           "src": "images/02_watercolor/MiniMax-H3-Image/original.png",
           "width": 1024,
-          "height": 1536
+          "height": 1536,
+          "parameters": {
+            "model": "MiniMax-H3-Image",
+            "size": "1024x1536",
+            "n": 1,
+            "output_format": "png",
+            "disable_prompt_enhanced": true,
+            "response_format": "b64_json",
+            "stream": false,
+            "aigc_watermark": false
+          }
         }
       ]
     },
     {
       "id": "03_anime",
       "title": "屋顶信使 · 动漫赛璐璐",
+      "prompt": "绘制一幅原创日式动画电影风格的纵向关键视觉，精确线稿与清晰赛璐璐色块阴影。成年女信使站在沿海城市的屋顶上，短黑发，橙色短外套、深蓝长裤、白色运动鞋，斜挎小邮包。她的右手握着一支收拢的深蓝雨伞，伞尖接触屋顶；左手将一封浅黄色信封举到胸前，信封无字。完整展示头部、双手和双脚，人物略偏右，三分之四侧面朝向画面左方。海风从左向右吹动她的头发和外套下摆。左后方是层叠的白色房屋与远处蓝色海港，近大远小的透视明确。傍晚橙色侧光照亮脸颊边缘，阴影是柔和的蓝紫色，前景清楚、远景简化。表情专注又期待，人物姿态自然平衡。保持二维手绘观感，不用写实皮肤或三维渲染。画面没有文字、品牌、水印或边框。",
       "images": [
         {
           "model": "gpt-image-2.5-sunburst",
           "src": "images/03_anime/gpt-image-2.5-sunburst/original.png",
           "width": 1024,
-          "height": 1536
+          "height": 1536,
+          "parameters": {
+            "model": "gpt-image-2.5-sunburst",
+            "size": "1024x1536",
+            "n": 1,
+            "output_format": "png",
+            "quality": "high",
+            "background": "opaque"
+          }
         },
         {
           "model": "gpt-image-2.6-sunburst",
           "src": "images/03_anime/gpt-image-2.6-sunburst/original.png",
           "width": 1024,
-          "height": 1536
+          "height": 1536,
+          "parameters": {
+            "model": "gpt-image-2.6-sunburst",
+            "size": "1024x1536",
+            "n": 1,
+            "output_format": "png",
+            "quality": "high",
+            "background": "opaque",
+            "complexity": "high"
+          }
         },
         {
           "model": "MiniMax-H3-Image",
           "src": "images/03_anime/MiniMax-H3-Image/original.png",
           "width": 1024,
-          "height": 1536
+          "height": 1536,
+          "parameters": {
+            "model": "MiniMax-H3-Image",
+            "size": "1024x1536",
+            "n": 1,
+            "output_format": "png",
+            "disable_prompt_enhanced": true,
+            "response_format": "b64_json",
+            "stream": false,
+            "aigc_watermark": false
+          }
         }
       ]
     },
     {
       "id": "04_clay_shop",
       "title": "狐狸面包房 · 黏土定格",
+      "prompt": "制作一张横向的手工黏土定格动画场景照片：一个温暖的小面包店，三分之四视角能同时看到正面柜台和右侧墙壁。店里只有一只拟人化橘色狐狸面包师，穿白色围裙，站在柜台后面，双爪扶在柜台边缘。柜台上只有三个彼此分离的圆盘，从观者左到右依次为：蓝盘里两只金黄牛角包、白盘里一只圆形黑麦面包、绿盘里三只草莓小蛋糕。右侧墙壁只有一个圆形时钟，指针指向十点十分；后墙是两层木架，只摆无字的白色面粉罐。狐狸、食物、家具都由哑光彩色黏土制作，保留轻微指纹、手工捏塑痕迹和柔软边缘。左上方柔和暖光，真实接触阴影，适度景深但三只盘子和食物数量都清楚可数。配色奶油白、焦糖棕和薄荷绿。没有任何文字、标志或边框。",
       "images": [
         {
           "model": "gpt-image-2.5-sunburst",
           "src": "images/04_clay_shop/gpt-image-2.5-sunburst/original.png",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "parameters": {
+            "model": "gpt-image-2.5-sunburst",
+            "size": "1536x1024",
+            "n": 1,
+            "output_format": "png",
+            "quality": "high",
+            "background": "opaque"
+          }
         },
         {
           "model": "gpt-image-2.6-sunburst",
           "src": "images/04_clay_shop/gpt-image-2.6-sunburst/original.png",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "parameters": {
+            "model": "gpt-image-2.6-sunburst",
+            "size": "1536x1024",
+            "n": 1,
+            "output_format": "png",
+            "quality": "high",
+            "background": "opaque",
+            "complexity": "high"
+          }
         },
         {
           "model": "MiniMax-H3-Image",
           "src": "images/04_clay_shop/MiniMax-H3-Image/original.png",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "parameters": {
+            "model": "MiniMax-H3-Image",
+            "size": "1536x1024",
+            "n": 1,
+            "output_format": "png",
+            "disable_prompt_enhanced": true,
+            "response_format": "b64_json",
+            "stream": false,
+            "aigc_watermark": false
+          }
         }
       ]
     },
     {
       "id": "05_cinema",
       "title": "雨夜交接 · 电影写实",
+      "prompt": "生成一张横向的写实电影剧照。雨夜的老街公交站，画面里恰好有两位成年人，镜头平视，以中远景完整显示两人的头、手和脚。观者左侧是一位穿深绿色风衣的女性，她的左手撑一把透明雨伞，伞面覆盖两人头顶；她的右手向右递出一个小型牛皮纸包裹。观者右侧是一位穿深蓝外套的男性，身体转向她，伸出双手接住同一个包裹，双手分别承托包裹底部的两端。定格在交接尚未结束的一瞬，女性右手仍触碰包裹左侧边缘，两人目光落在包裹上。每个人的两只手都可辨认，肢体结构和握持接触真实，包裹是完整单一物体。站台顶棚的暖黄灯照亮人物，街对面冷蓝灯光在湿柏油路上形成破碎反射；雨滴附着在透明伞面，背景轻微虚化。35mm 镜头，自然皮肤纹理，低饱和青蓝与琥珀色电影调色，阴影仍有细节。公交站牌无字，背景没有其他人物、可读文字、标志或边框。",
       "images": [
         {
           "model": "gpt-image-2.5-sunburst",
           "src": "images/05_cinema/gpt-image-2.5-sunburst/original.png",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "parameters": {
+            "model": "gpt-image-2.5-sunburst",
+            "size": "1536x1024",
+            "n": 1,
+            "output_format": "png",
+            "quality": "high",
+            "background": "opaque"
+          }
         },
         {
           "model": "gpt-image-2.6-sunburst",
           "src": "images/05_cinema/gpt-image-2.6-sunburst/original.png",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "parameters": {
+            "model": "gpt-image-2.6-sunburst",
+            "size": "1536x1024",
+            "n": 1,
+            "output_format": "png",
+            "quality": "high",
+            "background": "opaque",
+            "complexity": "high"
+          }
         },
         {
           "model": "MiniMax-H3-Image",
           "src": "images/05_cinema/MiniMax-H3-Image/original.png",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "parameters": {
+            "model": "MiniMax-H3-Image",
+            "size": "1536x1024",
+            "n": 1,
+            "output_format": "png",
+            "disable_prompt_enhanced": true,
+            "response_format": "b64_json",
+            "stream": false,
+            "aigc_watermark": false
+          }
         }
       ]
     },
     {
       "id": "06_poster",
       "title": "春日书展 · 中文平面设计",
+      "prompt": "设计一张可直接印刷的纵向中文书展海报，现代瑞士平面设计结合简洁剪纸插画。背景是温暖的象牙白，文字深墨绿，少量珊瑚橙点缀。四周有整齐留白，所有文字清晰、锐利、水平排版，网格对齐，字号层级鲜明。海报顶部占约四分之一高度，以最大号黑体排两行标题，第一行必须准确写“春日书展”，第二行小一号准确写“让故事发芽”。中部是一幅无字的平面剪纸插画：一本摊开的墨绿色书，书页上长出一枝带三片叶子的珊瑚橙植物，几何形状简洁。下方信息区按从上到下顺序准确写出以下四行，每行独立：“2027.04.17—04.18”、“10:00—18:00”、“青禾艺术中心”、“免费入场 · 欢迎交换旧书”。最底部用小号但可读的无衬线字体准确写“READ · GROW · SHARE”。引号仅用于说明，不要画出引号。除指定内容外不出现其他文字、乱码、二维码或标志。成品是平面海报本身，不是墙面或相框中的效果图。",
       "images": [
         {
           "model": "gpt-image-2.5-sunburst",
           "src": "images/06_poster/gpt-image-2.5-sunburst/original.png",
           "width": 1024,
-          "height": 1536
+          "height": 1536,
+          "parameters": {
+            "model": "gpt-image-2.5-sunburst",
+            "size": "1024x1536",
+            "n": 1,
+            "output_format": "png",
+            "quality": "high",
+            "background": "opaque"
+          }
         },
         {
           "model": "gpt-image-2.6-sunburst",
           "src": "images/06_poster/gpt-image-2.6-sunburst/original.png",
           "width": 1024,
-          "height": 1536
+          "height": 1536,
+          "parameters": {
+            "model": "gpt-image-2.6-sunburst",
+            "size": "1024x1536",
+            "n": 1,
+            "output_format": "png",
+            "quality": "high",
+            "background": "opaque",
+            "complexity": "high"
+          }
         },
         {
           "model": "MiniMax-H3-Image",
           "src": "images/06_poster/MiniMax-H3-Image/original.png",
           "width": 1024,
-          "height": 1536
+          "height": 1536,
+          "parameters": {
+            "model": "MiniMax-H3-Image",
+            "size": "1024x1536",
+            "n": 1,
+            "output_format": "png",
+            "disable_prompt_enhanced": true,
+            "response_format": "b64_json",
+            "stream": false,
+            "aigc_watermark": false
+          }
         }
       ]
     },
     {
       "id": "07_cutaway",
       "title": "山间观测站 · 建筑剖视",
+      "prompt": "画一幅横向的精密建筑剖视插画，一座建在岩石平台上的两层小型山间天文观测站。采用统一的三分之四轴测视角，无透视消失点，移去朝向观者的前墙以展示内部，但保留后墙、两侧墙、楼板和屋顶。一楼左半是厨房：水槽、炉灶沿后墙排列；一楼右半是工作室：一张长桌上有无字地图和一盏台灯。二楼左半是卧室：一张单人床和一只柜子；二楼右半是观测室：一台望远镜指向打开的圆顶天窗。楼梯位于建筑最右侧，沿右墙从一楼前部上升到二楼后部，楼梯到达处的楼板必须有真实开口，不能穿过实心楼板。地面入口在一楼正面左侧，二楼有围栏防止从楼梯口跌落。各房间大小合理、用途可辨，家具不穿墙。风格是精细针管笔线稿配克制的水彩淡彩，木材暖棕、金属蓝灰，背景仅少量山体轮廓与淡色天空。整体结构一眼可读，细节丰富但不拥挤，不要任何文字、箭头、尺寸标注、人物或图例。",
       "images": [
         {
           "model": "gpt-image-2.5-sunburst",
           "src": "images/07_cutaway/gpt-image-2.5-sunburst/original.png",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "parameters": {
+            "model": "gpt-image-2.5-sunburst",
+            "size": "1536x1024",
+            "n": 1,
+            "output_format": "png",
+            "quality": "high",
+            "background": "opaque"
+          }
         },
         {
           "model": "gpt-image-2.6-sunburst",
           "src": "images/07_cutaway/gpt-image-2.6-sunburst/original.png",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "parameters": {
+            "model": "gpt-image-2.6-sunburst",
+            "size": "1536x1024",
+            "n": 1,
+            "output_format": "png",
+            "quality": "high",
+            "background": "opaque",
+            "complexity": "high"
+          }
         },
         {
           "model": "MiniMax-H3-Image",
           "src": "images/07_cutaway/MiniMax-H3-Image/original.png",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "parameters": {
+            "model": "MiniMax-H3-Image",
+            "size": "1536x1024",
+            "n": 1,
+            "output_format": "png",
+            "disable_prompt_enhanced": true,
+            "response_format": "b64_json",
+            "stream": false,
+            "aigc_watermark": false
+          }
         }
       ]
     },
     {
       "id": "08_comic",
       "title": "失而复得 · 连续四格漫画",
+      "prompt": "创作一整页横向彩色漫画，严格为两行两列的四个等大矩形分格，格间白色间隔均匀，阅读顺序为左上、右上、左下、右下。风格为清晰黑色墨线、柔和的平涂配色与少量网点阴影，所有格子画风一致。主角始终是同一名成年女性：短黑发、圆框眼镜、芥末黄色长外套、深蓝长裤、棕色斜挎包。另一角色始终是同一只白猫：左耳黑色、右耳白色、尾尖黑色。故事发生在同一张公园木长椅附近，红色围巾是唯一红色物件。第一格：女性坐在长椅上阅读一本蓝色封面的书，红围巾平放在她身旁，白猫在椅子下。第二格：一阵风把红围巾吹离长椅，围巾悬在画面右侧空中；女性转头惊讶地看向它，猫从椅子下跃出追赶。第三格：猫站在长椅右边的地面，嘴轻轻叼住已经落下的同一条红围巾的一端，女性蹲下伸手接围巾。第四格：女性重新坐在长椅上，脖子上戴着红围巾，猫坐在她身旁，她微笑着用一只手抚摸猫头，蓝色书合上放在膝上。用动作和视线讲清故事；保持角色服装、猫的花色、围巾颜色和长椅形状跨格一致。每格只有一位女性和一只猫，肢体自然，围巾不复制。不要对话框、旁白、文字、数字、标志或页面标题。",
       "images": [
         {
           "model": "gpt-image-2.5-sunburst",
           "src": "images/08_comic/gpt-image-2.5-sunburst/original.png",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "parameters": {
+            "model": "gpt-image-2.5-sunburst",
+            "size": "1536x1024",
+            "n": 1,
+            "output_format": "png",
+            "quality": "high",
+            "background": "opaque"
+          }
         },
         {
           "model": "gpt-image-2.6-sunburst",
           "src": "images/08_comic/gpt-image-2.6-sunburst/original.png",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "parameters": {
+            "model": "gpt-image-2.6-sunburst",
+            "size": "1536x1024",
+            "n": 1,
+            "output_format": "png",
+            "quality": "high",
+            "background": "opaque",
+            "complexity": "high"
+          }
         },
         {
           "model": "MiniMax-H3-Image",
           "src": "images/08_comic/MiniMax-H3-Image/original.png",
           "width": 1536,
-          "height": 1024
+          "height": 1024,
+          "parameters": {
+            "model": "MiniMax-H3-Image",
+            "size": "1536x1024",
+            "n": 1,
+            "output_format": "png",
+            "disable_prompt_enhanced": true,
+            "response_format": "b64_json",
+            "stream": false,
+            "aigc_watermark": false
+          }
         }
       ]
     }

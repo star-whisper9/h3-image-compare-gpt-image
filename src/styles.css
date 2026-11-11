@@ -9,6 +9,10 @@
   --line: #2a2b30;
   --hover: #24262b;
   --accent: #c3c1ff;
+  --json-key: #a9c7ff;
+  --json-string: #b4d8ac;
+  --json-number: #e8bd8c;
+  --json-literal: #cbb1ed;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -23,6 +27,10 @@
   --line: #dedfda;
   --hover: #e8e9e5;
   --accent: #6157b8;
+  --json-key: #235a9a;
+  --json-string: #376b32;
+  --json-number: #8c501c;
+  --json-literal: #7845a3;
 }
 * { box-sizing: border-box; }
 body { margin: 0; }
@@ -51,6 +59,21 @@ main { max-width: 1600px; margin: 0 auto; padding: 0 48px 64px; }
 h2 { display: flex; align-items: center; gap: 12px; font-size: 14px; font-weight: 500; margin: 0 0 16px; letter-spacing: .03em; }
 .scene-number { font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; letter-spacing: .05em; }
 .image-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.image-card { min-width: 0; }
+.disclosure { border: 1px solid var(--line); border-radius: 5px; background: var(--surface); font-size: 12px; }
+.parameters { margin-top: 10px; }
+.prompt { margin-top: 12px; }
+.disclosure summary { padding: 11px 12px; cursor: pointer; color: var(--muted); user-select: none; }
+.disclosure summary:hover { color: inherit; }
+.disclosure summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.disclosure[open] summary { border-bottom: 1px solid var(--line); color: inherit; }
+.prompt p { margin: 0; padding: 16px; line-height: 1.9; white-space: pre-wrap; overflow-wrap: anywhere; }
+.json-code { margin: 0; padding: 14px; overflow-x: auto; line-height: 1.7; tab-size: 2; }
+.json-code code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; font-size: 12px; }
+.json-key { color: var(--json-key); }
+.json-string { color: var(--json-string); }
+.json-number { color: var(--json-number); }
+.json-literal { color: var(--json-literal); }
 .image-button { display: flex; align-items: center; justify-content: center; position: relative; width: 100%; min-width: 0; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); overflow: hidden; cursor: zoom-in; }
 .image-button img { display: block; width: 100%; height: auto; max-height: 500px; object-fit: contain; }
 .image-button:hover { border-color: var(--muted); }

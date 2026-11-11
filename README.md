@@ -2,6 +2,8 @@
 
 React + Vite 静态展示站。三个模型并排三列，八个场景逐行展示；默认暗色，亮暗选择保存在当前浏览器。原图完整显示，点击后使用 [Yet Another React Lightbox](https://yet-another-react-lightbox.com/plugins/zoom) 放大，支持滚轮缩放、拖动、方向键切换及 Esc 关闭。
 
+每张图下有默认折叠的请求参数，以适配亮暗主题的高亮 JSON 展示；参数取自该原图所在生成尝试的 `request.body.json`，仅去除 `prompt` 字段。每个场景的 Prompt 单独默认折叠展示。导入时检查同一场景三个模型的 prompt 完全一致，否则报错，避免误展示共用 prompt。
+
 ## 本地运行
 
 需要 Node.js 22.12+（或 20.19+）。

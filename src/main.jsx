@@ -24,6 +24,16 @@ function ThemeIcon({ light }) {
   </svg>;
 }
 
+function JsonCode({ value }) {
+  const tokens = JSON.stringify(value, null, 2).split(/("(?:\\.|[^"\\])*"(?:\s*:)?|\btrue\b|\bfalse\b|\bnull\b|-?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?)/g);
+  return <pre className="json-code"><code>{tokens.map((token, index) => {
+    if (index % 2 === 0) return token;
+    const type = token.startsWith('"') ? (token.endsWith(':') ? 'key' : 'string')
+      : /^(true|false|null)$/.test(token) ? 'literal' : 'number';
+    return <span className={`json-${type}`} key={index}>{token}</span>;
+  })}</code></pre>;
+}
+
 function App() {
   const [theme, setTheme] = useState(document.documentElement.dataset.theme);
   const [index, setIndex] = useState(-1);
@@ -56,20 +66,30 @@ function App() {
             <div className="image-row">
               {scene.images.map((image, modelIndex) => {
                 const slideIndex = sceneIndex * gallery.models.length + modelIndex;
-                return <button className="image-button" key={image.model} onClick={() => setIndex(slideIndex)} aria-label={`放大：${scene.title}，${image.model}`} disabled={failedImages.has(image.src)}>
-                  {failedImages.has(image.src) ? <span role="alert" className="image-error">图片加载失败：{image.model}</span> : <img
-                    src={slides[slideIndex].src}
-                    alt={slides[slideIndex].alt}
-                    width={image.width}
-                    height={image.height}
-                    loading={sceneIndex === 0 ? 'eager' : 'lazy'}
-                    decoding="async"
-                    onError={() => setFailedImages(previous => new Set([...previous, image.src]))}
-                  />}
-                  <span className="expand-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7"><path d="M14 4h6v6M20 4l-7 7M10 20H4v-6M4 20l7-7" /></svg></span>
-                </button>;
+                return <div className="image-card" key={image.model}>
+                  <button className="image-button" onClick={() => setIndex(slideIndex)} aria-label={`放大：${scene.title}，${image.model}`} disabled={failedImages.has(image.src)}>
+                    {failedImages.has(image.src) ? <span role="alert" className="image-error">图片加载失败：{image.model}</span> : <img
+                      src={slides[slideIndex].src}
+                      alt={slides[slideIndex].alt}
+                      width={image.width}
+                      height={image.height}
+                      loading={sceneIndex === 0 ? 'eager' : 'lazy'}
+                      decoding="async"
+                      onError={() => setFailedImages(previous => new Set([...previous, image.src]))}
+                    />}
+                    <span className="expand-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7"><path d="M14 4h6v6M20 4l-7 7M10 20H4v-6M4 20l7-7" /></svg></span>
+                  </button>
+                  <details className="disclosure parameters">
+                    <summary aria-label={`${scene.title}，${image.model}，请求参数`}>请求参数</summary>
+                    <JsonCode value={image.parameters} />
+                  </details>
+                </div>;
               })}
             </div>
+            <details className="disclosure prompt">
+              <summary aria-label={`${scene.title}，Prompt`}>Prompt</summary>
+              <p>{scene.prompt}</p>
+            </details>
           </section>)}
         </div>
       </div>
