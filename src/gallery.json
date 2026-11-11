@@ -1,0 +1,201 @@
+{
+  "models": [
+    "gpt-image-2.5-sunburst",
+    "gpt-image-2.6-sunburst",
+    "MiniMax-H3-Image"
+  ],
+  "scenes": [
+    {
+      "id": "01_still_life",
+      "title": "窗边静物 · 写实摄影",
+      "images": [
+        {
+          "model": "gpt-image-2.5-sunburst",
+          "src": "images/01_still_life/gpt-image-2.5-sunburst/original.png",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "model": "gpt-image-2.6-sunburst",
+          "src": "images/01_still_life/gpt-image-2.6-sunburst/original.png",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "model": "MiniMax-H3-Image",
+          "src": "images/01_still_life/MiniMax-H3-Image/original.png",
+          "width": 1536,
+          "height": 1024
+        }
+      ]
+    },
+    {
+      "id": "02_watercolor",
+      "title": "雨后小屋 · 水彩绘本",
+      "images": [
+        {
+          "model": "gpt-image-2.5-sunburst",
+          "src": "images/02_watercolor/gpt-image-2.5-sunburst/original.png",
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "model": "gpt-image-2.6-sunburst",
+          "src": "images/02_watercolor/gpt-image-2.6-sunburst/original.png",
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "model": "MiniMax-H3-Image",
+          "src": "images/02_watercolor/MiniMax-H3-Image/original.png",
+          "width": 1024,
+          "height": 1536
+        }
+      ]
+    },
+    {
+      "id": "03_anime",
+      "title": "屋顶信使 · 动漫赛璐璐",
+      "images": [
+        {
+          "model": "gpt-image-2.5-sunburst",
+          "src": "images/03_anime/gpt-image-2.5-sunburst/original.png",
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "model": "gpt-image-2.6-sunburst",
+          "src": "images/03_anime/gpt-image-2.6-sunburst/original.png",
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "model": "MiniMax-H3-Image",
+          "src": "images/03_anime/MiniMax-H3-Image/original.png",
+          "width": 1024,
+          "height": 1536
+        }
+      ]
+    },
+    {
+      "id": "04_clay_shop",
+      "title": "狐狸面包房 · 黏土定格",
+      "images": [
+        {
+          "model": "gpt-image-2.5-sunburst",
+          "src": "images/04_clay_shop/gpt-image-2.5-sunburst/original.png",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "model": "gpt-image-2.6-sunburst",
+          "src": "images/04_clay_shop/gpt-image-2.6-sunburst/original.png",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "model": "MiniMax-H3-Image",
+          "src": "images/04_clay_shop/MiniMax-H3-Image/original.png",
+          "width": 1536,
+          "height": 1024
+        }
+      ]
+    },
+    {
+      "id": "05_cinema",
+      "title": "雨夜交接 · 电影写实",
+      "images": [
+        {
+          "model": "gpt-image-2.5-sunburst",
+          "src": "images/05_cinema/gpt-image-2.5-sunburst/original.png",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "model": "gpt-image-2.6-sunburst",
+          "src": "images/05_cinema/gpt-image-2.6-sunburst/original.png",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "model": "MiniMax-H3-Image",
+          "src": "images/05_cinema/MiniMax-H3-Image/original.png",
+          "width": 1536,
+          "height": 1024
+        }
+      ]
+    },
+    {
+      "id": "06_poster",
+      "title": "春日书展 · 中文平面设计",
+      "images": [
+        {
+          "model": "gpt-image-2.5-sunburst",
+          "src": "images/06_poster/gpt-image-2.5-sunburst/original.png",
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "model": "gpt-image-2.6-sunburst",
+          "src": "images/06_poster/gpt-image-2.6-sunburst/original.png",
+          "width": 1024,
+          "height": 1536
+        },
+        {
+          "model": "MiniMax-H3-Image",
+          "src": "images/06_poster/MiniMax-H3-Image/original.png",
+          "width": 1024,
+          "height": 1536
+        }
+      ]
+    },
+    {
+      "id": "07_cutaway",
+      "title": "山间观测站 · 建筑剖视",
+      "images": [
+        {
+          "model": "gpt-image-2.5-sunburst",
+          "src": "images/07_cutaway/gpt-image-2.5-sunburst/original.png",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "model": "gpt-image-2.6-sunburst",
+          "src": "images/07_cutaway/gpt-image-2.6-sunburst/original.png",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "model": "MiniMax-H3-Image",
+          "src": "images/07_cutaway/MiniMax-H3-Image/original.png",
+          "width": 1536,
+          "height": 1024
+        }
+      ]
+    },
+    {
+      "id": "08_comic",
+      "title": "失而复得 · 连续四格漫画",
+      "images": [
+        {
+          "model": "gpt-image-2.5-sunburst",
+          "src": "images/08_comic/gpt-image-2.5-sunburst/original.png",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "model": "gpt-image-2.6-sunburst",
+          "src": "images/08_comic/gpt-image-2.6-sunburst/original.png",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "model": "MiniMax-H3-Image",
+          "src": "images/08_comic/MiniMax-H3-Image/original.png",
+          "width": 1536,
+          "height": 1024
+        }
+      ]
+    }
+  ]
+}

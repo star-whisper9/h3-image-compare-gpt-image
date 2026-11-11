@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111214" />
+    <meta name="description" content="三个图像模型，八个场景，原图并排对照。" />
+    <title>图像对照</title>
+    <script>
+      const savedTheme = localStorage.getItem('image-gallery-theme');
+      if (savedTheme === 'light') document.documentElement.dataset.theme = 'light';
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
