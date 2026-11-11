@@ -22,6 +22,12 @@ npm run preview
 
 将 `dist/` 交给任意静态 HTTP 服务即可，也支持放在网站子路径下。不能直接双击 HTML 文件运行。
 
+## GitHub Pages 部署
+
+在仓库 **Settings → Pages → Build and deployment → Source** 中选择 **GitHub Actions**。推送到 `main` 后，[Pages 工作流](.github/workflows/pages.yml) 会使用 Node.js 24 执行 `npm ci` 和构建，上传 `dist/` 并部署。也可以在 **Actions → Deploy to GitHub Pages → Run workflow** 手动触发。
+
+工作流根据 Pages 返回的 `base_path` 设置 Vite 的资源前缀，适配仓库子路径及自定义域名。构建直接使用仓库内的图片和 `src/gallery.json`，无需重新导入素材或设置额外密钥。部署成功后的地址会出现在工作流的 `github-pages` 环境中。
+
 ## 素材
 
 仅复制模型原图，不包含拼接对比图、请求或响应日志。24 张原图已放入 `public/images/<场景>/<模型>/original.<原始扩展名>`，并随仓库保存；页面延迟加载非首行图片。`src/gallery.json` 记录场景、模型、相对路径及真实尺寸。运行和构建不依赖父目录。
